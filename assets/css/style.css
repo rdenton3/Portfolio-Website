@@ -125,6 +125,11 @@ header nav ul li a:hover {
   .work-img1 {
       flex-basis: 65%;
       position: relative;
+      opacity: .7;
+  }
+
+  .work-img1:hover {
+      opacity: 1;
   }
 
 .work-pt1 h2 {
@@ -165,6 +170,10 @@ header nav ul li a:hover {
   font-size: 16px;
 }
 
+.text-block:hover, .text-block2:hover {
+    padding: 50px 50px 50px 50px;
+}
+
 .text-block a {
     color: var(--text-color);
 }
@@ -183,16 +192,17 @@ header nav ul li a:hover {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
-  }
-.work-img2 {
-    flex-basis: 47.5%;
-    position: relative;
 }
 
-.work-img3 {
+.work-img2, .work-img3 {
     flex-basis: 47.5%;
     position: relative;
+    opacity: .7;
 }
+
+.work-img2:hover, .work-img3:hover {
+    opacity: 1;
+} 
 
 .text-block2 {
     position: absolute;
