@@ -83,6 +83,7 @@ header nav ul li a {
     text-align: center;
     border-bottom: 2px solid rgb(201, 124, 93, .5);
     padding-bottom: 10px;
+    letter-spacing: 2px;
 }  
 
 .about-text {
@@ -93,6 +94,104 @@ header nav ul li a {
     color: var(--text-color);
     line-height: 1.5;
     letter-spacing: 1px;
-    font-weight: 100;
-    text-align: left;
+    font-weight: lighter;
+    text-align: justify;
+  }
+
+  
+
+/* End About Styles Section */
+
+/* start work styles section */
+.work-container {
+    margin: 100px 100px 100px 125px;
+}
+
+.work-pt1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-pt1 img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .work-img1 {
+      flex-basis: 65%;
+      position: relative;
+  }
+
+.work-pt1 h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: var(--text-family);
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: 2px solid rgb(201, 124, 93, .5);
+    padding-bottom: 10px;
+
+}
+
+.work-text  {
+    font-family: var(--text-family);
+    color: var(--text-color);
+    font-size: 24px;
+    flex-basis: 30%;
+    margin-right: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.work-text p {
+    margin-top: 15px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(255, 241, 230);
+  color: var(--text-color);
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.text-block p {
+    font-size: 16px;
+}
+
+.work-pt2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.work-pt2 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+.work-img2 {
+    flex-basis: 47.5%;
+    position: relative;
+}
+
+.work-img3 {
+    flex-basis: 47.5%;
+    position: relative;
+}
+
+.text-block2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(255, 241, 230);
+    color: var(--text-color);
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+    font-size: 16px;
   }
