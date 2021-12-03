@@ -286,7 +286,11 @@ header nav ul li a:hover {
     .about-container {
         display: block;
     }
-    
+
+    .work-pt1 {
+        display: block;
+    }
+
     #contactme {
         justify-content: center;
         margin: 0;
