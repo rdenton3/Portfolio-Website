@@ -54,14 +54,14 @@ header h1 {
 header nav ul li a {
     padding: 15px 35px;
     font-weight: 100;
-    font-size: 1.45vw;
+    font-size: 18px;
     letter-spacing: 4px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(201, 124, 93);
 }
 
 header nav ul li a:hover {
-    color: white;
+    text-shadow: 0 0 .9px var(--text-color),0 0 .9px var(--text-color);
 }
 /* End Header Styling */
 
@@ -119,6 +119,7 @@ header nav ul li a:hover {
 
 .work-pt1 img {
     max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
   }
 
@@ -232,6 +233,7 @@ header nav ul li a:hover {
 /* CONTACT AND RESUME SECTION */
 #contactme {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 100px 110px 100px 125px;
 }
@@ -263,5 +265,92 @@ header nav ul li a:hover {
 
 .contact p a {
     color: var(--text-color);
+}
+
+/* Adding in Media Queries */
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width:768px) {
+    header {
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    .about-container {
+        display: block;
+    }
+    
+    #contactme {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+  }
+
+/*MEDIA QUERY MOBILE PHONES AND SMALLER  */
+@media screen and (max-width:575px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    header nav ul {
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-img, .about-text, .work-img1, .work-text {
+        flex-basis: 100%;
+    }
+
+    .work-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .work-pt1 {
+        display: block;
+    }
+
+    .text-block, .text-block2 {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgb(255, 241, 230);
+        color: var(--text-color);
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+    #contactme {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
